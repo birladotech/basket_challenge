@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *===== global property====== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#container {
+  width: 98%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 16px;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* *====HEADER===== */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  font-weight: 700;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+nav h2 {
+  margin-right: 40px;
+  font-size: 1.8em;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  margin-right: 1.5rem;
+}
+header .cart_and_user {
+  display: flex;
+  align-items: center;
+}
+
+.cart_and_user div:nth-child(2) {
+  background-color: yellow;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+.cart_and_user i {
+  font-size: 1.5em;
+}
+.cart_and_user div:nth-child(2) img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-line {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+/* *====END HEADER===== */
+
+/* *===MAIN======= */
+main {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+/* *=====section1======== */
+.image_basket img {
+  width: 350px;
+  border-radius: 20px;
+  margin-bottom: 0.7rem;
+}
+
+.container_basket {
+  display: flex;
+}
+
+.same_image img {
+  width: 80px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+/* *=====section2======== */
+.section2 {
+  padding: 20px;
+}
+/* 3 premye block */
+
+.edition_section_2 {
+  height: 235px;
+}
+
+.section_2_price {
+  height: 70px;
+  margin-top: 20px;
+  padding: 7px 0;
+}
+
+.add_to_cart {
+  height: 80px;
+  margin-top: 20px;
+}
+
+/* element ki anndan premye block */
+.edition_section_2 p:nth-child(1) {
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.edition_section_2 h1 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* element ki anndan dezyem block */
+
+.price_and_percent {
+  display: flex;
+  align-items: center;
+}
+.price_and_percent span:nth-child(1) {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.price_and_percent span:nth-child(2) {
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  padding: 4px;
+}
+
+.section_2_price p:nth-child(2) {
+  color: hsl(219, 9%, 45%);
+  text-decoration: line-through;
+  margin-top: 7px;
+}
+
+/* element ki anndan twazyem block lan */
+.add_to_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.monitor_cart {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: hsl(223, 64%, 98%);
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+
+.monitor_cart span:not(:nth-child(2)) {
+  color: hsl(26, 100%, 55%);
+}
+
+.add_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  color: hsl(223, 64%, 98%);
+  background: hsl(26, 100%, 55%);
+  outline: 0;
+  border: 0;
+  font-size: 1.3em;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.add_cart p {
+  margin-left: 15px;
+}
+
+/* extraa css */
+.image_basket:hover,
+.same_image:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
